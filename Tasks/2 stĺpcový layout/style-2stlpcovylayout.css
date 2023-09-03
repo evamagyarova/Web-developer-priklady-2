@@ -1,0 +1,83 @@
+* {
+    padding: 5px;
+}
+
+.hlavny {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+.hlavicka {
+    background-color: deepskyblue;
+    padding: 20px;
+}
+
+.riadok {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-top: 10px;
+}
+
+.lavy {
+    background-color: green;
+    flex: 1;
+    padding: 20px;
+    margin-right: 5px;
+
+}
+
+.pravy {
+    background-color: orange;
+    flex: 2;
+    padding: 20px;
+    margin-left: 15px;
+}
+
+.obrazky {
+    display: flex;
+    flex-direction: row;
+    padding-top: 250px;
+}
+
+.image1 {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    margin: 70px
+}
+
+.image2 {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    margin: 70px
+}
+
+.image3 {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    margin: 70px
+}
+
+.patka {
+    background-color: deepskyblue;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.logo {
+    font-size: 20px;
+    text-align: right;
+    color: white;
+    margin-top: 10px;
+}
+
+.ohranicenie {
+    border: white;
+    border-style: solid;
+}

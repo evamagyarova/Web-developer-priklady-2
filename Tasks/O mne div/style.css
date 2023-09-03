@@ -1,0 +1,89 @@
+* {
+padding: 8px;
+}
+
+a {
+    color: Blue;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Hlavny {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+
+.Nadpis {
+    display: flex;
+    font-size: x-large;
+    background-color: darkgrey;
+    opacity: 0.8;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    border-radius: 10px;
+}
+
+.Riadok {
+    display: flex;
+    flex-direction: column;
+}
+.Podriadok1{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+.Obrazok{
+    flex: 1;
+    background-color: darkgrey;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+.Text {
+    flex: 2;
+    background-color: darkgrey;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 10px;
+    margin-left:20px;
+}
+.Podriadok2{
+    display: flex;
+    flex-direction: row;
+}
+.Kontakt {
+    flex: 1;
+    background-color: darkgrey;
+    opacity: 0.8;
+    text-align: left;
+    margin-right: -35px;
+    border-radius: 10px;
+}
+
+.Praca {
+    flex: 2;
+    background-color: darkgrey;
+    opacity: 0.8;
+    text-align: center;
+    margin-left:55px;
+    border-radius: 10px;
+}
+
+.cervene {
+    color: Red;
+}
+
+@media screen and (max-width: 600px) {
+    .Riadok,.Podriadok1,.Podriadok2 {
+        flex-direction: column;
+    }
+}
+

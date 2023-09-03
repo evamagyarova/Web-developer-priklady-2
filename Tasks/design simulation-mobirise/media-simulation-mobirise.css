@@ -1,0 +1,11 @@
+@media screen and (max-width: 1200px) {
+    .section .header, .left1, .right1, .row1, .row2, .row3,. left3, .right3, .row4, .row5, . row6, .row7, .row8 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .article_main{
+        text-align: center;
+        padding-left: -200px;
+    }
+}

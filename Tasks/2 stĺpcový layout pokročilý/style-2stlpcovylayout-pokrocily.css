@@ -1,0 +1,67 @@
+.hlavny {
+    border: #ff5b3b solid thick;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.hlavicka {
+    /*border: dodgerblue solid thick;*/
+    margin-top: -60px;
+    background-color: deepskyblue;
+    min-height: 50px;
+    position: fixed;
+    width: 1200px;
+}
+.riadok{
+    border:seagreen solid thick;
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.lavy{
+    border: deepskyblue solid thick;
+    flex:1;
+}
+.pravy{
+    border:darkslateblue solid thick;
+    flex:2;
+}
+.lavy-prvy{
+    border:black solid thick;
+    min-height: 200px;
+}
+.lavy-druhy{
+    border:black solid thick;
+    min-height: 300px;
+}
+.pravy-prvy{
+    border:black solid thick;
+    min-height: 300px;
+}
+.pravy-druhy{
+    border:black solid thick;
+    min-height: 200px;
+}
+.riadok2{
+    border:greenyellow solid thick;
+    display: flex;
+    gap: 10px;
+    min-height: 100px;
+}
+
+.lavy2{
+    border:lightskyblue solid thick;
+    flex:2;
+}
+.pravy2{
+    border:cornflowerblue solid thick;
+    flex:2;
+}
+.patka{
+    border:darkorange solid thick;
+    min-height: 70px;
+}

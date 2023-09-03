@@ -1,0 +1,280 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    max-width: 2000px;
+    padding: 80px;
+    gap: 50px;
+    margin: 0 auto;
+    margin-top: 0px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.header_main {
+    flex: 1;
+    color: lightgrey;
+    font-family: Tahoma;
+    font-size: 80px;
+    text-align: left;
+}
+
+.article_main {
+    flex: 1;
+    color: grey;
+    font-family: Tahoma;
+    font-size: 25px;
+    text-align: left;
+    padding-top: 230px;
+    padding-left: 400px;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.left1 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.right1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.button_left {
+    flex: 1;
+    text-align: left;
+    font-size: 20px;
+    font-family: Tahoma;
+    color: lightgrey;
+}
+
+.button_right {
+    flex: 1;
+    text-align: right;
+    font-family: Tahoma;
+    font-size: 20px;
+    color: grey;
+}
+
+.development {
+    padding-left: 50px;
+    color: grey;
+}
+
+.mark {
+    color: purple;
+    font-size: 100px;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.number_section {
+    flex: 1;
+    font-family: Tahoma;
+    color: grey;
+    font-size: 50px;
+}
+
+.header_section {
+    flex: 3;
+    font-family: Tahoma;
+    color: lightgrey;
+    font-size: 40px;
+    text-align: left;
+}
+
+.article_section {
+    flex: 2;
+    font-family: Tahoma;
+    color: grey;
+    font-size: 25px;
+}
+
+.row3 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.left3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.right3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.square {
+    width: 90px; /* Šírka štvorca */
+    height: 100px; /* Výška štvorca */
+    background-color: black;
+    border: purple solid 10px;
+}
+
+.row4 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 70px;
+}
+
+.row5 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image1 {
+    flex: 1;
+    height: 250px;
+    background-color: purple;
+}
+
+.image2row {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.image2 {
+    flex: 3;
+    text-align: left;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+}
+
+.description1 {
+    flex: 1;
+    text-align: left;
+    font-size: 20px;
+    font-family: Arial;
+    color: lightgrey;
+}
+
+.row6 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 70px;
+}
+
+.sivy-kruh {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: grey;
+}
+
+.history_article {
+    flex: 3;
+    color: grey;
+    font-family: Tahoma;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 250px;
+
+}
+
+.row7 {
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lastprojects_row {
+    display: flex;
+    flex-direction: column;
+    padding-right: 600px;
+}
+
+.years {
+    color: grey;
+    font-family: Tahoma;
+    font-size: 25px;
+    text-align: right;
+}
+
+.header7 {
+    font-family: Tahoma;
+    color: lightgrey;
+    font-size: 80px;
+    text-align: right;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vodorovné vycentrovanie */
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    gap: 20px;
+}
+
+.project1 {
+    width: 1200px;
+    max-height: 200px; /* Zmeniť na požadovanú výšku */
+    overflow: hidden;
+}
+
+.project2 {
+    width: 1200px;
+    max-height: 200px; /* Zmeniť na požadovanú výšku */
+    overflow: hidden;
+}
+
+.project3 {
+    max-height: 200px; /* Zmeniť na požadovanú výšku */
+    overflow: hidden;
+    width: 1200px;
+}
+
+.row8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vodorovné vycentrovanie */
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.logos1, .logos2 {
+    gap: 20px;
+}
+
+.header8 {
+    font-family: Tahoma;
+    color: lightgrey;
+    font-size: 40px;
+}
+
+
