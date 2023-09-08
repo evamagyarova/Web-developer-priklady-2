@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu</title>
+    <link rel="stylesheet" href="style - Chat GPT-hamburger menu.css">
+</head>
+<body>
+<div class="menu-toggle">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+</div>
+<nav class="nav-menu">
+    <ul>
+        <li><a href="#">Domů</a></li>
+        <li><a href="#">O nás</a></li>
+        <li><a href="#">Služby</a></li>
+        <li><a href="#">Kontakt</a></li>
+    </ul>
+</nav>
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".nav-menu");
+    menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    });
+</script>
+
+</body>
+</html>
