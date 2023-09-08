@@ -1,26 +1,12 @@
 * {
     padding: 10px;
-    border-radius: 25px
-}
-
-div ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-div li {
-    display: inline-block;
-    margin-right: 10px; /* Môžete pridať medzeru medzi položkami */
 }
 
 .hlavny {
-    background-color: Red;
-    margin: 0 auto;
-    width: 1200px;
-    padding: 10px;
+    background-color: darkred; /* Zlozena zatvorka cez klavesovu skratku AltGr + B */
+    margin: 0 auto; /* Kontajner tymto vycentrujeme */
+    max-width: 1200px;
 }
-
 .hlavicka {
     background-color: blue;
     height: 50px;
@@ -33,39 +19,69 @@ div li {
 }
 
 .lavy {
-    background-color: yellow;
-    flex: 3
+    background-color: orange;
+    flex: 2;
 }
 
 .stredny {
-    background-color: purple;
-    flex: 1
-}
-
-.pravy {
     background-color: green;
     flex: 1;
 }
 
+.pravy {
+    background-color: hotpink;
+    flex: 1;
+    text-align: left;
+}
+
 .patka {
-    background-color: crimson
+    background-color: #d6551e;
+}
+
+@media screen and (max-width: 600px) {
+    .riadok {
+        flex-direction: column;
+    }
 }
 
 .obrazok {
-    height: 59px;
-    float: left
+    max-width: 100px;
+    float: left; /* Alebo right */
+    margin-right: 10px; /* Prispôsobte podľa potreby */
+    border-radius: 25px;
 }
 
 a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
+/* a:hover reaguje na kurzor mysi, ked prejde cez odkaz */
 a:hover {
-    color: Red;
+    color: red;
 }
 
 a:visited {
     color: aquamarine;
 }
 
+.logo {
+    color: #d6551e;
+    font-size: 32px;
+    font-family: Arial;
+}
+
+.skratka {
+    color: white;
+}
+
+div ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+div li {
+    display: inline-block;
+    margin-right: 30px; /* Môžete pridať medzeru medzi položkami */
+}

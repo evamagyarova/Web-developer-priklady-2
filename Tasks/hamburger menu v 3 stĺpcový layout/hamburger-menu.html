@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <title>3-stĺpcový web dizajn</title>
-    <link rel="stylesheet" href="style-3stlpcovylayout-semantickeznaky.css">
+    <title>3-stĺpcový web dizajn s hamburger menu</title>
+    <link rel="stylesheet" href="style-hamburger menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -13,12 +14,18 @@
     <header>
         <a alt="Hlavná stránka TM Consulting" class="logo" href="/"><span class="skratka">TM</span> Consulting</a>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Odkaz 1</a></li>
-            <li><a href="#">Odkaz 2</a></li>
-            <li><a href="#">Odkaz 3</a></li>
-        </ul>
+    <nav class="topnav"
+         id="myTopnav">
+        <a class="active"
+           href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a class="icon"
+           href="javascript:void(0);"
+           onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </nav>
     <section>
         <article class="lavy farba-textu">Ľavý kontajner Lorem ipsum dolor sit amet, consectetur
@@ -54,6 +61,17 @@
         <a alt="TM Consulting" href="https://www.tmconsulting.sk">TM Consulting</a>
     </footer>
 </main>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
 
 </body>
 
