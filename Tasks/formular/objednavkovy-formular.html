@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            border: 1px solid transparent; /* Výchozí rámíček bez barevného obrysu */
+            padding-left: 25px;
+        }
+        input[type="radio"]:checked + div {
+            border: 1px solid red; /* Rámíček po označení radio tlačítka */
+        }
+        input[type="radio"] {
+            position: absolute;
+            /*            left: 10px;*/
+        }
+        label span {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+<main style="max-width: 400px;">
+    <input type="radio" value="0" name="doprava">
+    <div>
+        <label>Osobně<span style="float: right;">0 Kč</span></label>
+    </div>
+    <input type="radio" value="180" name="doprava">
+    <div>
+        <label>Česká pošta<span style="float: right;">180 Kč</span></label>
+    </div>
+    <input type="radio" value="300" name="doprava">
+    <div>
+        <label>Kurýr<span style="float: right;">300 Kč</span></label>
+    </div>
+</main>
+</body>
+</html>

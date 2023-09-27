@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ako zväčšiť obrázok, keď prejdem myšou</title>
+    <style>
+        .hlavny img:hover {
+            transform: scale(1.2);
+            /*transform: rotate(0.5turn);*/
+            transition: transform 5s;
+        }
+    </style>
+</head>
+<body>
+<div class="hlavny">
+    <img src="Images/leto2.jpg" width="500"/>
+</div>
+
+<!-- Tento obrazok uz nebude obsahovat efekt transform -->
+<img src="Images/leto2.jpg" width="500"/>
+</body>
+</html>
