@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Popup s textom</title>
+</head>
+<body>
+<h2>Zobrazenie Pop up po klknutí na tlačítko</h2>
+
+<p id="demo">Toto je text v paragrafe</p>
+
+<button type="button" onclick="zobrazText()">Zobraz text</button>
+
+<script>
+    function zobrazText() {
+        var obsah = document.getElementById('demo').textContent;
+        alert(obsah);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zmena tlacitka</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skry Text</title>
+</head>
+<body>
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can hide HTML elements.</p>
+
+<button type="button" id="toggleButton" onclick="toggleText()">Skry text</button>
+
+<script>
+    function toggleText() {
+        var demo = document.getElementById('demo');
+        var button = document.getElementById('toggleButton');
+
+        if (demo.style.display === 'none') {
+            demo.style.display = 'block';
+            button.innerText = 'Skry Text';
+        } else {
+            demo.style.display = 'none';
+            button.innerText = 'Zobraz Text';
+        }
+    }
+</script>
+</body>
+</html>
