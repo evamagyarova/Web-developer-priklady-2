@@ -1,0 +1,42 @@
+martina kostalova  to  Everyone 17:19
+Ahojte, nejde mi pripojiť sa, ani vas nepočujem. budem sa snažiť to nastaviť.
+
+WEB developer  to  Everyone 17:49
+Ahojte 🙂
+
+WEB developer  to  Everyone 18:27
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jednoduchá kalkulačka</title>
+</head>
+<body>
+<h1>jednoduchá kalkulačka</h1>
+<form>
+    <label for="cislo1">Čislo 1</label>
+    <input type="text" id="cislo1"/>
+    <br><br>
+    <label for="cislo2">Čislo 2</label>
+    <input type="text" id="cislo2"/>
+    <br><br>
+    <label for="vysledok">Výsledok</label>
+    <input type="text" id="vysledok" disabled />
+    <br><br>
+    <button type="button" onclick="scitaj()">Sčítaj</button>
+    <button>Odčítaj</button>
+    <button>Násob</button>
+    <button>Deľ</button>
+    <button>Reset</button>
+</form>
+<script>
+    function scitaj(){
+        var cislo1 = parseFloat(document.getElementById("cislo1").value);
+        var cislo2 = parseFloat(document.getElementById("cislo2").value);
+        var vysledok = cislo1 + cislo2;
+        document.getElementById("cislo3").value = vysledok;
+    }
+</script>
+
+</body>
+</html>

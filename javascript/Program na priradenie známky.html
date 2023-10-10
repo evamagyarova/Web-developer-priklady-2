@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <label for="text1">Pocet bodov</label>
+    <input type="text" id="text1"/>
+    <br><br>
+    <label for="text2">Meno studenta</label>
+    <input type="text" id="text2"/>
+    <br><br>
+    <label for="vysledok">Hodnotenie</label>
+    <input type="text" id="vysledok" disabled />
+    <br><br>
+    <button type="button" onclick="vyhodnot()">Vyhodnot</button>
+</form>
+<script>
+    function vyhodnot() {
+        // Získání hodnoty z pole "text1" a převedení na číslo
+        let percenta = parseFloat(document.getElementById("text1").value);
+        // Přiřazení známky na základě procent
+        let znamka = "";
+
+        if (percenta >= 90) {
+            znamka = "A";
+        } else if (percenta >= 75) {
+            znamka = "B";
+        } else if (percenta >= 65) {
+            znamka = "C";
+        } else {
+            znamka = "F";
+        }
+
+        // Zobrazení známky v poli "vysledok"
+        document.getElementById("vysledok").value = znamka;
+    }
+</script>
+</body>
+</html>

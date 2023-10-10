@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+var x = 10;
+
+if (x > 5) {
+console.log("x je väčší ako 5");
+//Dalsie prikazy ak podmienka je splnena
+
+} else {
+console.log("x nie je väčší ako 5");
+//Dalsie podmienky ak podmienka NIE JE splnená
+}
+
+//Zadanie: Ak je počet bodov od 75 alebo väčší a rovný 75, tak dostal známku 1
+//Ak je pocet bodov od 60 do 74, tak dostal známku 2
+//Ak je bodov od 50 do 58, tak známka 3
+//40 - 49 bovo je 4
+//Menej ako 40 bodov je známka 5
+
+let pocetBodovStudentaJanka = 30;
+// Cast kodu, ktora rozhoduje o znamke vyuzitim prikazu if
+if (pocetBodovStudentaJanka >= 75) {
+    document.write("Známka 1");
+} else if (pocetBodovStudentaJanka >=60) {
+    document.write("Známka 2");
+} else if (pocetBodovStudentaJanka >=50) {
+    document.write("Známka 3");
+} else if (pocetBodovStudentaJanka >=40) {
+    document.write("Známka 4");
+} else {
+    document.write("Známka 5")
+}
+
+</script>
+</body>
+</html>

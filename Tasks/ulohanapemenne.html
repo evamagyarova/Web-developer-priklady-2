@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Premenné</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="text"></div>
+<script>
+    let text = document.getElementById("text");
+    let birthDay = "03.04.2000";
+    let mark = "1,5";
+    let yearBegin = "2022";
+    const date = new Date();
+    const day = date.getDate();
+    const month = (date.getMonth() + 1);
+    const year = date.getFullYear();
+
+    text.innerHTML = "<span style='color: darkred'>Študent Jozef Mrkvička sa narodil </span>" + "<span style='color: red; font-weight: bold;'>" + birthDay + "</span>" + "<span style='color: #c4c400'>, z maturitnej skúšky má známku </span>" + "<span style='color: red; font-weight: bold;'>" + mark + "</span>" + "<span style='color: green'> a od septembra </span>" + "<span style='color: limegreen; font-weight: bold;'>" + yearBegin + "</span>" + "<span style='color: darkcyan'> nastúpi do nového zamestnania ako Web developer junior. </span>" + "<br>" + "<span style='color: deepskyblue'>V Bratislave dňa </span>" + "<span style='color: deepskyblue; font-weight: bold'>" + day + "." + month + "." + year + "</span>";
+</script>
+</body>
+</html>
