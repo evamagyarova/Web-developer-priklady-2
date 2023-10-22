@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polia</title>
+</head>
+<body>
+<script>
+    var mojePole = [1, 2, 3, 4]; // Pole s nazvom mojePole, ktore obsahuje 5 cisiel
+    document.writeln(mojePole); // Vypisali sme obsah celeho pola, ale aj s ciarkami
+
+    document.writeln("<br>Prvá hodnota poľa");
+    document.writeln(mojePole[0]); // Vypiseme obsah prveho prvku pola, [ AltGr + F       ] AltGr + G
+
+    document.writeln("<br>Posledná hodnota poľa");
+    document.writeln(mojePole[mojePole.length-1]); // Vypiseme obsah posledneho prvku pola cez mojePole.length-1
+
+    mojePole.push(5); // Doplnenie povodneho pola o hodnotu 5
+    mojePole[2] = 999; // Prepisanie 3-tieho prvku pola na hodnotu 999
+    document.writeln("<br>Všetky hodnoty poľa:");
+    for (let index = 0; index < mojePole.length; index++) {
+        document.writeln(mojePole[index]);
+    }
+    document.writeln("<br>Všetky hodnoty poľa (po novom cez lambda výrazy):");
+    mojePole.forEach((prvok) => {
+        document.writeln(prvok);
+    });
+
+    // TODO Scitajte vsetky cisla v poli a vypiste vysledok
+    let sum = 0;
+    for (let index = 0; index < mojePole.length; index++) {
+        sum = sum + mojePole[index];
+    }
+    document.writeln("<br>Výsledok sčítania je: " + sum);
+
+
+    // Pole moze obsahovat aj text
+    var auta = ["Honda", "BMW", "Toyota", "Škoda"];
+    document.writeln("<br>Prvé auto v zozname: " + auta[0]);
+    document.writeln("<br>Posledné auto v zozname: " + auta[auta.length - 1]);
+
+    document.writeln("<br>Všetky hodnoty poľa: ");
+    for (let index = 0; index < auta.length; index++) {
+        document.writeln(auta[index]);
+    }
+
+</script>
+</body>
+</html>

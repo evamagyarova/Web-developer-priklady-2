@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Vyhodnoť slovnú známku</title>
+</head>
+<body>
+<!--
+Úloha:
+Ako bude program fungovať z pohľadu používateľa: Vo formulári zadáme slovnú známku (výborný, chválitebný, dobrý, dostatočný, nedostatočný). Odpoveďou bude alikvótna číselná známka, ktorú program vypíše.
+-->
+<form>
+    <label for="slovna-znamka">Slovná známka</label>
+    <input type="text" id="slovna-znamka" /><br>
+    <input type="button" onclick="vyhodnotSlovnuZnamku()" value="Vyhodnoť test" /><br>
+    <p id="odpoved"></p>
+</form>
+
+<script>
+    // TODO zmenit program, aby fungoval na velke alebo kombinaciu velkych, malych pismen + bez diakritiky
+    function vyhodnotSlovnuZnamku() {
+        let slovnaZnamkaStudenta = document.getElementById("slovna-znamka").value;
+        let znamka;
+        if (slovnaZnamkaStudenta === "výborný" || slovnaZnamkaStudenta === "Výborný" || slovnaZnamkaStudenta === "vyborny" || slovnaZnamkaStudenta === "Vyborny" || slovnaZnamkaStudenta === "vyborný")
+            znamka = 1;
+        else if (slovnaZnamkaStudenta === "chválitebný" || slovnaZnamkaStudenta === "Chválitebný")
+            znamka = 2;
+        else if (slovnaZnamkaStudenta === "dobrý" || slovnaZnamkaStudenta === "Dobrý")
+            znamka = 3;
+        else if (slovnaZnamkaStudenta === "dostatočný" || slovnaZnamkaStudenta === "Dostatočný")
+            znamka = 4;
+        else
+            znamka = 5;
+        //document.write("Dostal si známku " + znamka);
+        document.getElementById("odpoved").innerHTML = znamka;
+    }
+</script>
+</body>
+</html>
