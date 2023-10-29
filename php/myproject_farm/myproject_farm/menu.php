@@ -105,11 +105,11 @@
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+<!--        <div class="bar"></div>-->
+<!--        <div class="bar"></div>-->
+<!--        <div class="bar"></div>-->
+<!--        <div class="bar"></div>-->
+<!--        <div class="bar"></div>-->
     </div>
     <nav class="menu">
         <ul>
