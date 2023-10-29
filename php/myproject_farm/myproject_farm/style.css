@@ -101,7 +101,7 @@ p{
     width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* Responsive layout*/
 @media screen and (max-width: 800px) {
     .column {
         flex: 50%;
@@ -125,6 +125,14 @@ p{
     }
 }
 
+@media screen and (max-width: 600px) {
+    .aktuality_frame {
+        flex-direction: column;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
 /* Odtiaľto dole štýlovanie formulára*/
 form {
     max-width: 600px;
@@ -132,7 +140,7 @@ form {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    background: white;
+    background: lightgrey;
 }
 label {
     display: block;
