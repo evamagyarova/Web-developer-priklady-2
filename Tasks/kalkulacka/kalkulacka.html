@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Jednoduchá kalkulačka</title>
+</head>
+<body>
+<h1>jednoduchá kalkulačka</h1>
+<form>
+    <label for="cislo1">Čislo 1</label>
+    <input type="number" id="cislo1"/>
+    <br><br>
+    <label for="cislo2">Čislo 2</label>
+    <input type="number" id="cislo2"/>
+    <br><br>
+    <label for="vysledok">Výsledok</label>
+    <input type="number" id="vysledok" disabled />
+    <br><br>
+    <!--<input type="button" onclick="scitaj()" value="Sčítaj" />-->
+    <button type="button" onclick="scitaj()">Sčítaj</button>
+    <button type="button" onclick="odcitaj()">Odčítaj</button>
+    <button type="button" onclick="nasob()">Násob</button>
+    <button type="button" onclick="del()">Deľ</button>
+    <button type="reset">Reset</button>
+</form>
+<script src="kalkulacka.js"></script>
+</body>
+</html>
