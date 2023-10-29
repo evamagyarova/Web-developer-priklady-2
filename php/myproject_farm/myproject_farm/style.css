@@ -1,0 +1,163 @@
+.pozadie {
+    background-color:lightgrey;
+}
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+}
+
+.aktuality {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.tlac{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.aktuality_frame {
+    border-style: solid;
+    border-color: white;
+}
+
+.tlac_frame {
+    border-style: solid;
+    border-color: white;
+}
+
+.image_aktuality {
+    display: flex;
+    justify-content: center;
+}
+
+.image_tlac {
+    display: flex;
+    justify-content: center;
+}
+
+.prenajom {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+
+.prenajom_frame {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    border-style: solid;
+    border-color: white;
+}
+
+.prenajom_nadpis{
+    flex: 2;
+}
+.prenajom_image{
+    flex: 1;
+}
+.prenajom_text{
+    flex: 4;
+}
+.kontakt{
+    justify-content: left;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 20%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .prenajom_frame {
+        flex-direction: column;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Odtiaľto dole štýlovanie formulára*/
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: white;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color:purple;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: purple;
+}

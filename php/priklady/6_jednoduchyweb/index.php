@@ -13,7 +13,7 @@ if (isset($_GET["id"])) { // Testujeme, ci je nastavene id
         include "uvod.php";
     }
 }
-else { // Ak id NIE je nastavene, tak zobrazi uvod.php
+else { // Ak id NIE je nastavene, tak zobrazi 0_uvod.php
     include "uvod.php";
 }
 include "pata.php";

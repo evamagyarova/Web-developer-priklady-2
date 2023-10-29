@@ -1,12 +1,12 @@
 <html>
 <head>
-    <title>Jednoduchý web</title>
+    <title>Levandule | Jur nad Hronom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<style>
-    .pozadie {
-        background-color: lightgrey;
-    }
-</style>
+</head>
 <body class="pozadie">
-Hlavička
-<hr><hr>
+<p>Levandule | Jur nad Hronom</p>
+
+<hr>
+<hr>
